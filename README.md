@@ -39,6 +39,3 @@ Data CPI disusun secara dummy (realistis) dengan 3 tahun data untuk 5 kota utama
 ## 📥 Cara Membuka
 1. Buka `cpi_jatim.xlsx` dengan Excel
 2. Buka `dashboard_ihk_jatim.pbix` dengan Power BI Desktop
-
-## 📄 Lisensi
-Proyek ini dilisensikan di bawah MIT License.
