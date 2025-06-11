@@ -1,0 +1,20 @@
+from PIL import Image, ImageDraw, ImageFont
+
+# Buat gambar dummy untuk screenshot Excel dan Power BI (sebagai placeholder)
+img_excel = Image.new('RGB', (1200, 675), color=(245, 245, 245))
+img_powerbi = Image.new('RGB', (1200, 675), color=(240, 235, 225))
+
+draw_excel = ImageDraw.Draw(img_excel)
+draw_powerbi = ImageDraw.Draw(img_powerbi)
+
+# Gunakan font default karena tidak semua environment punya font eksternal
+draw_excel.text((50, 50), "📊 Dashboard Excel – CPI Jawa Timur\n(Pivot Table & Line Chart)", fill=(0, 0, 0))
+draw_powerbi.text((50, 50), "📈 Dashboard Power BI – CPI Jawa Timur\n(Interactive Filters, Charts)", fill=(0, 0, 0))
+
+# Simpan gambar
+excel_img_path = "/mnt/data/screenshot_excel.png"
+powerbi_img_path = "/mnt/data/screenshot_dashboard.png"
+img_excel.save(excel_img_path)
+img_powerbi.save(powerbi_img_path)
+
+excel_img_path, powerbi_img_path
